@@ -31,9 +31,9 @@ export default function Home() {
 
       <div className="bg-repeat bg-[url('../public/scales.jpeg')] bg-cover bg-center min-h-screen flex items-center justify-center flex-col">
         <div className="px-2 ">
-          <h1 className="mb-4 text-5xl text-center text-slate-900 font-thin">
+          {/* <h1 className="mb-4 text-5xl text-center text-slate-900 font-thin">
             S 33° 36.4251&apos;
-          </h1>
+          </h1> */}
           <div className="flex flex-row items-center justify-center border-2 w-full  border-slate-900" />
 
           <Image
@@ -54,9 +54,9 @@ export default function Home() {
             </div>
             <div className="border-2 h-1 flex-1 w-36 border-slate-900"></div>
           </div>
-          <h1 className="mt-4 text-5xl text-center text-slate-900 font-thin">
+          {/* <h1 className="mt-4 text-5xl text-center text-slate-900 font-thin">
             E 151° 20.0156&apos;
-          </h1>
+          </h1> */}
         </div>
       </div>
 

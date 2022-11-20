@@ -1,29 +1,33 @@
+import Head from "next/head";
 import Image from "next/image";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MenuItem } from "../components";
-import SEOHead from "../components/Head";
 import { drinks, salads, sandwiches } from "../data/menu.js";
-import globalMeta from "../data/metaHeadData";
 import bones from "../public/bones.png";
 import sardean from "../public/sardean.png";
 export default function Home() {
   const googleLink =
     "https://www.google.com/maps/place/1%2F231+Whale+Beach+Rd,+Whale+Beach+NSW+2107/@-33.61103,151.3279416,17z/data=!3m1!4b1!4m5!3m4!1s0x6b72ad4a5e75eedb:0x9c5d0928105c02b8!8m2!3d-33.61103!4d151.3301303";
 
-  const structuredLd = JSON.stringify({
-    "@context": globalMeta.canonicalUrl,
-    description:
-      "Sardean is a cafe and store in Whale Beach, Sydney. We serve specialty coffees, cold brew, teas, kombucha, soft drinks, sandwiches, salads, and more.",
-  });
   return (
     <div className="">
-      <SEOHead
-        canonicalUrl={globalMeta.siteUrl}
-        structuredData={structuredLd}
-        title="Sardean Cafe & Store"
-        description="Specialty Coffee, Sandwiches, Salads, and artisan produce cafe & store in Whale Beach"
-        ogType="website"
-      />
+      <Head>
+        <title>Sardean | Cafe & Store | Whale Beach</title>
+        <meta
+          name="description"
+          content="Specialty Cafe & Store in Whale Beach"
+          key="desc"
+        />
+        <meta property="og:title" content="Sardean Cafe & Store" />
+        <meta
+          property="og:description"
+          content="Specialty Cafe & Artisan Store in Whale Beach"
+        />
+        <meta
+          property="og:image"
+          content="https://www.sardean.com/sardean.png"
+        />
+      </Head>
 
       <div className="bg-repeat bg-[url('../public/scales.jpeg')] bg-cover bg-center min-h-screen flex items-center justify-center flex-col">
         <div className="px-2 ">

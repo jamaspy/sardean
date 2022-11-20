@@ -1,30 +1,170 @@
 import Head from "next/head";
 import Image from "next/image";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { MenuItem } from "../components";
+import { drinks, salads, sandwiches } from "../data/menu.js";
+import bones from "../public/bones.png";
 import sardean from "../public/sardean.png";
-import styles from "../styles/Home.module.css";
 export default function Home() {
+  const googleLink =
+    "https://www.google.com/maps/place/1%2F231+Whale+Beach+Rd,+Whale+Beach+NSW+2107/@-33.61103,151.3279416,17z/data=!3m1!4b1!4m5!3m4!1s0x6b72ad4a5e75eedb:0x9c5d0928105c02b8!8m2!3d-33.61103!4d151.3301303";
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
         <title>Sardean</title>
         <meta name="description" content="Cafe & Store Whale Beach, NSW" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Image src={sardean} alt="sardean" quality={100} width={600} />
-        <h1 className="text-xl">Whale Beach, NSW</h1>
-        <h2 className="font-thin">Cafe &amp; Store Coming Soon</h2>
-      </main>
+      <div className="bg-repeat bg-[url('../public/scales.jpeg')] bg-cover bg-center min-h-screen flex items-center justify-center flex-col">
+        <div className="px-2 ">
+          <h1 className="mb-4 text-5xl text-center text-slate-900 font-thin">
+            S 33° 36.4251&apos;
+          </h1>
+          <div className="flex flex-row items-center justify-center border-2 w-full  border-slate-900" />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          sardean
-        </a>
+          <Image src={sardean} alt="sardean" quality={100} width={600} />
+
+          <div className="flex flex-row items-center justify-center">
+            <div className="border-2 h-1 flex-1 w-36 border-slate-900 "></div>
+            <div className="">
+              <h1 className="text-xl flex-1 px-2 min-w-full">
+                Whale Beach, NSW
+              </h1>
+            </div>
+            <div className="border-2 h-1 flex-1 w-36 border-slate-900"></div>
+          </div>
+          <h1 className="mt-4 text-5xl text-center text-slate-900 font-thin">
+            E 151° 20.0156&apos;
+          </h1>
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row container mx-auto mt-12">
+        <div className="flex-col flex-1 flex items-start justify-center p-4">
+          <h1 className="font-bold text-2xl mb-4">Sardean Cafe & Store</h1>
+          <p className="mb-4">
+            Sardean Cafe is a family-owned cafe &amp; convenience store, located
+            moments from the iconic Whale Beach in the Northern Beaches. We sell
+            artisan products from local suppliers as well as{" "}
+            <span className="font-medium">specialty coffees</span>, freshly made{" "}
+            <span className="font-medium">sandwiches</span>, and{" "}
+            <span className="font-medium">salads</span>. We also offers a range
+            of delicious <span className="font-medium">cakes</span> and{" "}
+            <span className="font-medium">pastries</span>.
+            <span className="font-medium"></span>
+          </p>
+          <p className="mb-4">
+            Our store offers a huge range of locally produced ingredients such
+            as breads, honey, fresh pasta, sauces and many daily essentials. You
+            can also find art from local artists, as well as soft serve ice
+            creams and natural ice lollies
+          </p>
+          <p className="mb-4">
+            Come and see us at{" "}
+            <a
+              href={googleLink}
+              target="_blank"
+              className="font-semibold mb-2 text-sky-700"
+              rel="noreferrer"
+            >
+              Shop 1/231 Whale Beach Road{" "}
+            </a>
+          </p>
+          <p className="mb-4">
+            We are open 7 days a week from 6:30am to 6:00pm.
+          </p>
+          <p> Hope to see you soon!</p>
+          <p> Gary, Kylie &amp; James</p>
+        </div>
+        <div className="flex-1 flex items-center justify-center p-4">
+          <Image
+            src={bones}
+            alt="sardean"
+            quality={100}
+            width={200}
+            className="opacity-50 hidden md:inline"
+          />
+          <Image
+            src={bones}
+            alt="sardean"
+            quality={100}
+            width={200}
+            className="opacity-50 md:rotate-180"
+          />
+          <Image
+            src={bones}
+            alt="sardean"
+            quality={100}
+            width={200}
+            className="opacity-50 hidden md:inline"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col container mx-auto my-12">
+        <h1 className=" text-center w-full font-bold text-2xl mb-4">Menu</h1>
+        <hr className="mb-4" />
+        <div className="w-full flex flex-col md:flex-row justify-around">
+          <div className="ml-2" id="drinks-container">
+            <h1 className="text-xl font-medium mb-2">Drinks</h1>
+            {drinks.map((drink) => (
+              <MenuItem
+                key={drink.name}
+                name={drink.name}
+                price={drink.price}
+              />
+            ))}
+          </div>
+          <div className="ml-2 my-4 md:my-0" id="sandwiches-container">
+            <h1 className="text-xl font-medium mb-2">Fresh Sandwiches</h1>
+            {sandwiches.map((sandwich) => (
+              <MenuItem
+                key={sandwich.name}
+                name={sandwich.name}
+                price={sandwich.price}
+              />
+            ))}
+          </div>
+          <div className="ml-2" id="sandwiches-container">
+            <h1 className="text-xl font-medium mb-2">Salads</h1>
+            {salads.map((salad) => (
+              <MenuItem
+                key={salad.name}
+                name={salad.name}
+                price={salad.price}
+              />
+            ))}
+          </div>
+        </div>
+        <hr className="my-8" />
+      </div>
+      <footer className="flex flex-col w-full p-4">
+        <div className="flex flex-row items-center justify-center w-full mb-4">
+          <a href="https://www.instagram.com/sardean.cafe">
+            <FaFacebook className="text-xl mr-2" />
+          </a>
+          <a href="https://www.instagram.com/sardean.cafe">
+            <FaInstagram className="text-xl" />
+          </a>
+        </div>
+        <div className="flex flex-col items-center  w-full">
+          <a
+            href={googleLink}
+            target="_blank"
+            className="font-semibold mb-2 text-sky-700"
+            rel="noreferrer"
+          >
+            Shop 1/231 Whale Beach Road{" "}
+          </a>
+          <div className="flex flex-row">
+            <p className="font-semibold mr-2">Cafe Times:</p>
+            <p>Mon-Sun: 6:30am - 2:30pm</p>
+          </div>
+          <div className="flex md:flex-row">
+            <p className="font-semibold mr-2">Store Times: </p>
+            <p>Mon-Sun: 6:30am - 6:00pm</p>
+          </div>
+        </div>
       </footer>
     </div>
   );

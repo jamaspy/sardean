@@ -64,9 +64,22 @@ export default function Home() {
         <div className="flex-col flex-1 flex items-start justify-center p-4">
           <h1 className="font-bold text-2xl mb-4">Sardean Cafe & Store</h1>
           <p className="mb-4">
-            Sardean Cafe is a family-owned cafe &amp; convenience store, located
-            moments from the iconic Whale Beach in the Northern Beaches. We sell
-            artisan products from local suppliers as well as{" "}
+            Sardean? Is it a small fish found in a can...? Kinda.
+          </p>
+          <p className="mb-4">
+            Are we being a bit tongue in cheek being based in WHALE beach...?
+            Maybe.
+          </p>
+          <p className="mb-8">
+            Sardean - an ode to my parents Sarah and Dean (Sar-Dean). Who
+            inspire me in everything that I do{" "}
+            <span className="text-2xl">🫶</span>
+          </p>
+
+          <p className="mb-4">
+            We are a beachy cafe &amp; convenience store, located moments from
+            the iconic Whale Beach in the Northern Beaches. We sell artisan
+            products from local suppliers as well as{" "}
             <span className="font-medium">specialty coffees</span>, freshly made{" "}
             <span className="font-medium">sandwiches</span>, and{" "}
             <span className="font-medium">salads</span>. We also offers a range
@@ -184,6 +197,12 @@ export default function Home() {
             <p className="font-semibold mr-2">Store Times: </p>
             <p>Mon-Sun: 6:30am - 6:00pm</p>
           </div>
+          <p className="text-xs font-light mt-4">
+            We acknowledge the Traditional Owners of country throughout
+            Australia, and acknowledge their continuing connection to land,
+            waters and community. We pay our respects to Elders past, present
+            and emerging.
+          </p>
         </div>
       </footer>
     </div>

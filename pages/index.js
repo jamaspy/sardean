@@ -3,8 +3,8 @@ import Image from "next/image";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MenuItem } from "../components";
 import { drinks, salads, sandwiches } from "../data/menu.js";
-import bones from "../public/bones.png";
-import sardean from "../public/sardean.png";
+import sardean from "../public/sardeanwithLines.webp";
+import bones from "../public/tin.png";
 export default function Home() {
   const googleLink =
     "https://www.google.com/maps/place/1%2F231+Whale+Beach+Rd,+Whale+Beach+NSW+2107/@-33.61103,151.3279416,17z/data=!3m1!4b1!4m5!3m4!1s0x6b72ad4a5e75eedb:0x9c5d0928105c02b8!8m2!3d-33.61103!4d151.3301303";
@@ -29,35 +29,15 @@ export default function Home() {
         />
       </Head>
 
-      <div className="bg-repeat bg-[url('../public/scales.jpeg')] bg-cover bg-center min-h-screen flex items-center justify-center flex-col">
-        <div className="px-2 ">
-          {/* <h1 className="mb-4 text-5xl text-center text-slate-900 font-thin">
-            S 33° 36.4251&apos;
-          </h1> */}
-          <div className="flex flex-row items-center justify-center border-2 w-full  border-slate-900" />
-
-          <Image
-            src={sardean}
-            alt="sardean"
-            quality={100}
-            width={600}
-            placeholder="blur"
-            priority
-          />
-
-          <div className="flex flex-row items-center justify-center">
-            <div className="border-2 h-1 flex-1 w-36 border-slate-900 "></div>
-            <div className="">
-              <h1 className="text-xl flex-1 px-2 min-w-full">
-                Whale Beach, NSW
-              </h1>
-            </div>
-            <div className="border-2 h-1 flex-1 w-36 border-slate-900"></div>
-          </div>
-          {/* <h1 className="mt-4 text-5xl text-center text-slate-900 font-thin">
-            E 151° 20.0156&apos;
-          </h1> */}
-        </div>
+      <div className="px-2 bg-repeat bg-[url('../public/scales.jpeg')] bg-cover bg-center min-h-screen flex items-center justify-center flex-col">
+        <Image
+          src={sardean}
+          alt="sardean"
+          quality={100}
+          width={500}
+          placeholder="blur"
+          priority
+        />
       </div>
 
       <div className="flex flex-col lg:flex-row container mx-auto mt-12">
@@ -111,27 +91,7 @@ export default function Home() {
           <p> Gary, Kylie &amp; James</p>
         </div>
         <div className="flex-1 flex items-center justify-center p-4">
-          <Image
-            src={bones}
-            alt="sardean"
-            quality={100}
-            width={200}
-            className="opacity-50 hidden md:inline"
-          />
-          <Image
-            src={bones}
-            alt="sardean"
-            quality={100}
-            width={200}
-            className="opacity-50 md:rotate-180"
-          />
-          <Image
-            src={bones}
-            alt="sardean"
-            quality={100}
-            width={200}
-            className="opacity-50 hidden md:inline"
-          />
+          <Image src={bones} alt="sardean" quality={100} width={400} />
         </div>
       </div>
       <div className="flex flex-col container mx-auto my-12">

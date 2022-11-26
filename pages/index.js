@@ -97,39 +97,7 @@ export default function Home() {
       <div className="flex flex-col container mx-auto my-12">
         <h1 className=" text-center w-full font-bold text-2xl mb-4">Menu</h1>
         <hr className="mb-4" />
-        <div className="w-full flex flex-col md:flex-row justify-around">
-          <div className="ml-2" id="drinks-container">
-            <h1 className="text-xl font-medium mb-2">Drinks</h1>
-            {drinks.map((drink) => (
-              <MenuItem
-                key={drink.name}
-                name={drink.name}
-                price={drink.price}
-              />
-            ))}
-          </div>
-          <div className="ml-2 my-4 md:my-0" id="sandwiches-container">
-            <h1 className="text-xl font-medium mb-2">Fresh Sandwiches</h1>
-            {sandwiches.map((sandwich) => (
-              <MenuItem
-                key={sandwich.name}
-                name={sandwich.name}
-                price={sandwich.price}
-              />
-            ))}
-          </div>
-          <div className="ml-2" id="sandwiches-container">
-            <h1 className="text-xl font-medium mb-2">Salads</h1>
-            {salads.map((salad) => (
-              <MenuItem
-                key={salad.name}
-                name={salad.name}
-                price={salad.price}
-              />
-            ))}
-          </div>
-        </div>
-        <hr className="my-8" />
+        <h2 className="text-center">Coming Soon</h2>
       </div>
       <footer className="flex flex-col w-full p-4">
         <div className="flex flex-row items-center justify-center w-full mb-4">

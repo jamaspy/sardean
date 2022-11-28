@@ -62,7 +62,7 @@ export default function Home() {
             products from local suppliers as well as{" "}
             <span className="font-medium">specialty coffees</span>, freshly made{" "}
             <span className="font-medium">sandwiches</span>, and{" "}
-            <span className="font-medium">salads</span>. We also offers a range
+            <span className="font-medium">salads</span>. We also offer a range
             of delicious <span className="font-medium">cakes</span> and{" "}
             <span className="font-medium">pastries</span>.
             <span className="font-medium"></span>

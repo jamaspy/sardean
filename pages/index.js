@@ -42,7 +42,9 @@ export default function Home() {
 
       <div className="flex flex-col lg:flex-row container mx-auto mt-12">
         <div className="flex-col flex-1 flex items-start justify-center p-4">
-          <h1 className="font-bold text-2xl mb-4">Sardean Cafe & Store</h1>
+          <h1 className="font-bold text-2xl mb-4">
+            Sardean Cafe & Store - OPENING SOON!
+          </h1>
           <p className="mb-4">
             Sardean? Is it a small fish found in a can...? Kinda.
           </p>
@@ -95,9 +97,11 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col container mx-auto my-12">
-        <h1 className=" text-center w-full font-bold text-2xl mb-4">Menu</h1>
+        <h1 className=" text-center w-full font-bold text-2xl mb-4">
+          Opening Soon!
+        </h1>
         <hr className="mb-4" />
-        <h2 className="text-center">Coming Soon</h2>
+        {/* <h2 className="text-center">Coming Soon</h2> */}
       </div>
       <footer className="flex flex-col w-full p-4">
         <div className="flex flex-row items-center justify-center w-full mb-4">

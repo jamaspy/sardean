@@ -42,9 +42,7 @@ export default function Home() {
 
       <div className="flex flex-col lg:flex-row container mx-auto mt-12">
         <div className="flex-col flex-1 flex items-start justify-center p-4">
-          <h1 className="font-bold text-2xl mb-4">
-            Sardean Cafe & Store - OPENING SOON!
-          </h1>
+          <h1 className="font-bold text-2xl mb-4">Sardean Cafe & Store</h1>
           <p className="mb-4">
             Sardean? Is it a small fish found in a can...? Kinda.
           </p>
@@ -87,7 +85,7 @@ export default function Home() {
             </a>
           </p>
           <p className="mb-4">
-            We are open 7 days a week from 6:30am to 6:00pm.
+            We are open 7 days a week from 7:00am to 2:00pm.
           </p>
           <p> Hope to see you soon!</p>
           <p> Gary, Kylie &amp; James</p>
@@ -97,9 +95,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col container mx-auto my-12">
-        <h1 className=" text-center w-full font-bold text-2xl mb-4">
+        {/* <h1 className=" text-center w-full font-bold text-2xl mb-4">
           Opening Soon!
-        </h1>
+        </h1> */}
         <hr className="mb-4" />
         {/* <h2 className="text-center">Coming Soon</h2> */}
       </div>
@@ -123,12 +121,12 @@ export default function Home() {
           </a>
           <div className="flex flex-row">
             <p className="font-semibold mr-2">Cafe Times:</p>
-            <p>Mon-Sun: 6:30am - 2:30pm</p>
+            <p>Mon-Sun: 7:00am - 2:00pm</p>
           </div>
-          <div className="flex md:flex-row">
+          {/* <div className="flex md:flex-row">
             <p className="font-semibold mr-2">Store Times: </p>
             <p>Mon-Sun: 6:30am - 6:00pm</p>
-          </div>
+          </div> */}
           <p className="text-xs font-light mt-4">
             We acknowledge the Traditional Owners of country throughout
             Australia, and acknowledge their continuing connection to land,

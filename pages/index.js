@@ -94,13 +94,103 @@ export default function Home() {
           <Image src={bones} alt="sardean" quality={100} width={400} />
         </div>
       </div>
-      <div className="flex flex-col container mx-auto my-12">
-        {/* <h1 className=" text-center w-full font-bold text-2xl mb-4">
-          Opening Soon!
-        </h1> */}
+      {/* <div className="flex flex-col container mx-auto my-12">
+        <h1 className=" text-center w-full font-bold text-2xl mb-4">Menu</h1>
         <hr className="mb-4" />
-        {/* <h2 className="text-center">Coming Soon</h2> */}
-      </div>
+        <div className="grid grid-cols-3">
+          <div className="border rounded-lg shadow-lg p-4 m-4 bg-white">
+            <p className="font-semibold mb-2">Coffees</p>
+            <div className="w-full">
+              <div className="flex flex-row items-center justify-between mb-1">
+                <p className="text-sm">Milk</p>
+                <p className="text-sm">$5.00</p>
+              </div>
+              <div className="flex flex-row items-center justify-between mb-1">
+                <p className="text-sm">Short</p>
+                <p className="text-sm">$4.00</p>
+              </div>
+              <div className="flex flex-row items-center justify-between mb-1">
+                <p className="text-sm">Filter</p>
+                <p className="text-sm">$4.00</p>
+              </div>
+              <div className="flex flex-row items-center justify-between mb-1">
+                <p className="text-sm">Iced</p>
+                <p className="text-sm">$4.00</p>
+              </div>
+              <div className="flex flex-row items-center justify-between">
+                <p className="text-sm">Cold Brew</p>
+                <p className="text-sm">$4.00</p>
+              </div>
+            </div>
+          </div>
+          <div className="border rounded-lg shadow-lg p-4 m-4 bg-white">
+            <p className="font-semibold mb-2">Cakes &amp; Pastries</p>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Mini Croissant</p>
+              <p className="text-sm">$4.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Mini Almond Croissant</p>
+              <p className="text-sm">$4.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Mini Danish</p>
+              <p className="text-sm">$4.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Raisin Scroll</p>
+              <p className="text-sm">$4.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Florentine</p>
+              <p className="text-sm">$2.00</p>
+            </div>
+          </div>
+
+          <div className="border rounded-lg shadow-lg p-4 m-4 bg-white">
+            <p className="font-semibold mb-2">Salads</p>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Love Foods Green Goddess</p>
+              <p className="text-sm">$14.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Love Foods Oodles of Noodles</p>
+              <p className="text-sm">$14.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Love Foods Greek Mezza</p>
+              <p className="text-sm">$14.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Love Foods Greek Mezza</p>
+              <p className="text-sm">$14.00</p>
+            </div>
+          </div>
+          <div className="border rounded-lg shadow-lg p-4 m-4 bg-white">
+            <p className="font-semibold mb-2">Miss Lilly's Pies</p>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Beef &amp; Mushroom</p>
+              <p className="text-sm">$8.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Chicken & Mustard</p>
+              <p className="text-sm">$7.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Lamb Shephards</p>
+              <p className="text-sm">$8.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Pumpkin &amp; Feta</p>
+              <p className="text-sm">$7.00</p>
+            </div>
+            <div className="flex flex-row items-center justify-between mb-1">
+              <p className="text-sm">Pork &amp; Fennel Sausage Roll</p>
+              <p className="text-sm">$5.00</p>
+            </div>
+          </div>
+        </div>
+      </div> */}
       <footer className="flex flex-col w-full p-4">
         <div className="flex flex-row items-center justify-center w-full mb-4">
           <a href="https://www.instagram.com/sardean.cafe">
@@ -119,9 +209,11 @@ export default function Home() {
           >
             Shop 1/231 Whale Beach Road{" "}
           </a>
-          <div className="flex flex-row">
-            <p className="font-semibold mr-2">Cafe Times:</p>
-            <p>Mon-Sun: 7:00am - 2:00pm</p>
+          <div className="flex flex-col">
+            <p className="font-semibold">Opening Times</p>
+            <p>Mon: 7:00am - 2:00pm</p>
+            <p>Tues: CLOSED</p>
+            <p>Wed-Sun: 7:00am - 2:00pm</p>
           </div>
           {/* <div className="flex md:flex-row">
             <p className="font-semibold mr-2">Store Times: </p>
